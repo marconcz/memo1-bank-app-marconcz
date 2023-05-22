@@ -55,7 +55,7 @@ public class Memo1BankApp {
 		Optional<Account> accountOptional = accountService.findById(cbu);
 		return ResponseEntity.of(accountOptional);
 	}
-
+//Trae todas las transacciones
 	@GetMapping("/transactions")
 	public Collection<Transaction> getTransactions() { return transactionService.getTransactions(); }
 
